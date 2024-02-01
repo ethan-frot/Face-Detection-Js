@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Face-Detection-JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="age-test">
+      <h1>Venez testez votre age !</h1>
+      <h2>(Mettez vous seul devant la caméra et attendez ✨)</h2>
+      <h3 id="age">Age : Attente de détection...</h3>
+      <h3 id="gender">Gender : Attente de détection...</h3>
+    </div>
+
+    <div class="video">
+      <div class="canvas-container" id="canvasContainer"></div>
+      <video id="video" width="720" height="560" autoplay muted></video>
+    </div>
+  </body>
+</html>
